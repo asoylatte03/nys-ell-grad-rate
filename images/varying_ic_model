@@ -1,0 +1,103 @@
+digraph {
+	subgraph "clusterobs_id (4680)" {
+		amer_native [label="amer_native
+~
+ConstantData" shape=box style="rounded, filled"]
+		aapi [label="aapi
+~
+ConstantData" shape=box style="rounded, filled"]
+		ells [label="ells
+~
+ConstantData" shape=box style="rounded, filled"]
+		hisp_latinx_idx [label="hisp_latinx_idx
+~
+ConstantData" shape=box style="rounded, filled"]
+		aa_blk [label="aa_blk
+~
+ConstantData" shape=box style="rounded, filled"]
+		y [label="y
+~
+Normal" shape=ellipse style=filled]
+		swd [label="swd
+~
+ConstantData" shape=box style="rounded, filled"]
+		county_idx [label="county_idx
+~
+ConstantData" shape=box style="rounded, filled"]
+		white [label="white
+~
+ConstantData" shape=box style="rounded, filled"]
+		econ_disadv [label="econ_disadv
+~
+ConstantData" shape=box style="rounded, filled"]
+		multiracial [label="multiracial
+~
+ConstantData" shape=box style="rounded, filled"]
+		label="obs_id (4680)" labeljust=r labelloc=b style=rounded
+	}
+	b2 [label="b2
+~
+Normal" shape=ellipse]
+	b4 [label="b4
+~
+Normal" shape=ellipse]
+	b8 [label="b8
+~
+Normal" shape=ellipse]
+	b1 [label="b1
+~
+Normal" shape=ellipse]
+	b6 [label="b6
+~
+Normal" shape=ellipse]
+	sigma [label="sigma
+~
+HalfNormal" shape=ellipse]
+	sigma_a [label="sigma_a
+~
+HalfNormal" shape=ellipse]
+	b5 [label="b5
+~
+Normal" shape=ellipse]
+	b7 [label="b7
+~
+Normal" shape=ellipse]
+	b9 [label="b9
+~
+Normal" shape=ellipse]
+	b3 [label="b3
+~
+Normal" shape=ellipse]
+	alpha [label="alpha
+~
+Normal" shape=ellipse]
+	subgraph "clusterCounty (62)" {
+		a_county [label="a_county
+~
+Normal" shape=ellipse]
+		label="County (62)" labeljust=r labelloc=b style=rounded
+	}
+	sigma_a -> a_county
+	alpha -> a_county
+	b2 -> y
+	aapi -> y
+	amer_native -> y
+	ells -> y
+	b8 -> y
+	swd -> y
+	a_county -> y
+	county_idx -> y
+	b1 -> y
+	sigma -> y
+	b6 -> y
+	b5 -> y
+	b3 -> y
+	b7 -> y
+	multiracial -> y
+	aa_blk -> y
+	b4 -> y
+	hisp_latinx_idx -> y
+	b9 -> y
+	white -> y
+	econ_disadv -> y
+}
