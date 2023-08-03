@@ -10,24 +10,33 @@ conda env create -- file <file_name.txt>
 
 `PyMC3` may present environmental issues. To resolve this, create a separate environment to use when constructing the Bayesian models. Running the following code will create a new environment and install `PyMC3`. Additionally, the `multilevel modeling.ipynb` notebook uses `GraphViz` to visualize the model architecture. Running `pip install graphviz` will download `GraphViz` to the respective environment. In order to visualize/generate the DOT source code, `GraphViz` must be installed to the system PATH [here](https://www.graphviz.org/)
 
-## Heading
+## Stakeholder Understanding 
 
-## Heading
+## Overview
 
-## Heading
+## Data
 
-## Heading
+## Method 
 
-## Heading 
+## Linear Mixed Effects Model (LMER)  
    
-## Heading 
+## Bayesian Hierarchical Modeling 
 
-## Heading
+### Complete Pooling Approach
 
-### Subheading
+### Unpooled/No Pooling Approach
 
-### Subheading
+### Hierarchical Modeling (w. Varying Intercepts)
 
-### Subheading
+## Model Evaluation 
+
+### Posterior Predictive Check 
+
+### Data Suppression & Potential Biases 
+
+## Key Insights 
+
+## Next Steps 
+
 
 ## Acknowledgements & Credits 
