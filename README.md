@@ -22,21 +22,40 @@ conda env create -- file <file_name.txt>
    
 ## Bayesian Hierarchical Modeling 
 
+
 ### Complete Pooling Approach
+<p align="center">
+  <img width="460" height="300" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/pooledmodel.png">
+</p>
+
 
 ### Unpooled/No Pooling Approach
+<p align="center">
+  <img width="460" height="300" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/unpooledmodel.png">
+</p>
 
 ### Hierarchical Modeling (w. Varying Intercepts)
+![](https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/varying_ic_model.png)
+
 
 ## Model Evaluation 
 
 ### Posterior Predictive Check 
+<p align="center">
+  <img width="640" height="480" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/posterior_predictive_check.png">
+</p>
+
 
 ### Data Suppression & Potential Biases 
+<p align="center">
+  <img width="912" height="547" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/graduationrates_subgroup.png">
+</p>
+
+<p align="center">
+  <img width="912" height="390" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/missingvals_dist.png">
+</p>
 
 ## Key Insights 
 
 ## Next Steps 
-
-
 ## Acknowledgements & Credits 
