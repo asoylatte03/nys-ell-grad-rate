@@ -73,15 +73,36 @@ The hierarchical approach provides a balance between both pooled and unpooled ap
 To evaluate the overall fit of the model after Markov-Chain Monte-Carlo sampling methods, a posterior predictive check was conducted. Because of the non-normal distribution that explains the observed data, a normal or Gaussian prior and likelihood function proved ineffective at capturing the variance in the underlying data. The model fails to capture higher-probable observations where graduations rates > 82%. 
 
 ### Data Suppression & Potential Biases 
-<p align="center">
-  <img width="912" height="547" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/graduationrates_subgroup.png">
-</p>
 
 <p align="center">
   <img width="912" height="390" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/missingvals_dist.png">
 </p>
+In compliance with the Family Educational Rights and Privacy Act (FERPA), the NYS Department of Education suppresses any data points where observed data can violate the confidentiality of students’ personal records. Suppressed data denoted by an “s” or “-” was removed from the original dataset, leading to a significantly reduced volume of observed data. Groups, where suppressed data was most apparent, include:
+
+- American Indian or Alaska Native
+- Hispanic or Latino
+- English Language Learners
+- Asian or Native Hawaiian/Other Pacific Islander
+
+
+<p align="center">
+  <img width="912" height="547" src="https://github.com/asoylatte03/nys-ell-grad-rate/blob/main/images/graduationrates_subgroup.png">
+</p>
+Looking at the combined probability distributions for graduation rates across subgroups, because of high volumes of suppressed data for the 2021-2022 academic year, we may introduce potential biases in our inferences. Thus, the model may struggle to approximate graduation rate estimates for subgroups where there is little observed data. 
 
 ## Key Insights 
+From the results of the Posterior Predictive Check, it is difficult to ascertain whether the relative and absolute effects of a particular subgroup, shown in the Bayesian hierarchical model are appropriate given the aforementioned limitations. However, looking at the combined results of the Linear Mixed Effects Model and a varied-intercept Bayesian hierarchical model, English Language Learners consistently are predicted to have lower graduation rates compared to their peers. Thus, there may potentially be room to evaluate the conditions for English Language Learners in secondary education in New York. 
 
 ## Next Steps 
-## Acknowledgements & Credits 
+Potential next steps involve: 
+1. **Modifying the Hierarchical Structure of the Model:**
+    1. This project is limited by the fact that only a Bayesian hierarchical model was constructed assuming varied intercepts at the county level and a common slope However, a more robust analysis could be extracted by looking at both varied intercepts and slopes. 
+2. **Adjust Priors & Likelihood Distributions**
+    1. By leveraging domain knowledge and research, we may be able to construct more informative priors that capture the underlying probability distribution of observed data. 
+3. **Improving Model Complexity**
+    1. Perhaps, the model’s results are limited by only considering the effect of student subgroups vis-à-vis graduation rate outcomes. A stronger, more complex model can be constructed through the addition of group-level predictors such as median household income and poverty rates at the county level.
+
+## Acknowledgements & Credits
+Credit is given to the New York State Department of Education Open Data site found [here](https://data.nysed.gov/). 
+
+An amazing tutorial and walk-through of Bayesian hierarchical/multi-level models can be found [here](https://www.pymc.io/projects/docs/en/v3/pymc-examples/examples/case_studies/multilevel_modeling.html)
