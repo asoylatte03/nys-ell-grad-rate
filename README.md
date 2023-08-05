@@ -13,7 +13,7 @@ conda env create -- file <file_name.txt>
 ## Stakeholder Understanding 
 
 ## Overview
-This project seeks to leverage the hierarchical nature of the data, using statistical methods, to investigate the relative effects of student demographics on graduation outcomes. Prior analysis revealed that standard linear regression and multivariate regression fail to extract robust insights because of said hierarchical structure. Thus, this project utilizes Bayesian inference to 
+This project seeks to leverage the hierarchical nature of the data, using statistical methods, to investigate the relative effects of student demographics on graduation outcomes. Prior analysis revealed that standard linear regression and multivariate regression fail to extract robust insights because of said hierarchical structure. Thus, this project utilizes Bayesian inference to approximate graduation rates and evaluate group-wise comparisons across different student subgroups
 
 ## Data
 Data was compiled from the New York State Education Department’s Open Data [site](https://data.nysed.gov/). The original dataset has a hierarchical structure where information is compiled and grouped at the school level and across nine different student subgroups. Features were extracted from other datasets on the NYSED Open Data site including county, district name, and need-to-resource capacity index.
